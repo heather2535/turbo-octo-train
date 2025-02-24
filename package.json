@@ -7,6 +7,7 @@
         "@radix-ui/react-dialog": "^1.1.4",
         "@shadcn/ui": "^0.0.4",
         "axios": "^1.7.9",
+        "bfg": "^0.3.0",
         "chart.js": "^4.4.7",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
@@ -59,6 +60,7 @@
         ]
     },
     "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@craco/craco": "^7.1.0",
         "autoprefixer": "^10.4.20",
         "postcss": "^8.4.49",
