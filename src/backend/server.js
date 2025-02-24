@@ -1,5 +1,4 @@
-process.env.GOOGLE_APPLICATION_CREDENTIALS = '/Users/heather/bethelham/NLP-key.json';
-
+require('dotenv').config(); // Load .env variables
 const express = require('express');
 const axios = require('axios');
 const { LanguageServiceClient } = require('@google-cloud/language');
