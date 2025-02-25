@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchCurrentPrices, fetchHistoricalData } from './backend/api';
 import { Line } from 'react-chartjs-2';
-import Chart from 'chart.js/auto';
-import { DollarSign, TrendingUp, TrendingDown, Search, ExternalLink } from 'lucide-react';
+import { DollarSign, TrendingUp, TrendingDown, Search } from 'lucide-react';
 import SentimentAnalysis from './components/SentimentAnalysis';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
@@ -10,7 +9,6 @@ import Products from './pages/Products';
 import Community from './pages/Community';
 import Markets from './pages/Markets';
 import News from './pages/News';
-import OhlcvChart from './components/OHLCVChart'; // Adjust path as needed
 
 import './App.css';
 
@@ -22,10 +20,6 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [timePeriod, setTimePeriod] = useState('30');
   const [selectedCoin, setSelectedCoin] = useState('bitcoin');
-  const [sentimentData, setSentimentData] = useState({});
-  const [summary, setSummary] = useState('');
-  const [prediction, setPrediction] = useState(null);
-  const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [news, setNews] = useState([]); // State for news articles
 
